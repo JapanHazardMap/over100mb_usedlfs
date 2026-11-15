@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ページ移動中...</title>
+
+    <!-- 1. SEO対策：検索エンジンに正規の移動先URLを伝える -->
+    <link rel="canonical" href="https://japanhazardmap.github.io/" />
+
+    <!-- 2. JavaScriptによるリダイレクト（将来的なスマホ/PC振り分け対応） -->
+    <script>
+      (function () {
+        // ユーザーエージェントでスマホ・タブレット判定（将来振り分ける際に利用）
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        if (isMobile) {
+          // 【スマホ用の転送先】※現在は同じURLを指定。将来変更する場合はここを書き換えます
+          window.location.replace('https://japanhazardmap.github.io/');
+        } else {
+          // 【PC用の転送先】
+          window.location.replace('https://japanhazardmap.github.io/');
+        }
+      })();
+    </script>
+
+    <!-- 3. フォールバック：JavaScriptがオフの環境向けにMetaタグで0秒転送 -->
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=https://japanhazardmap.github.io/" />
+    </noscript>
+  </head>
+  <body>
+    <p>
+      ページを移動しています。自動的に切り替わらない場合は、<a
+        href="https://japanhazardmap.github.io/"
+        >こちら</a
+      >をクリックしてください。
+    </p>
+  </body>
+</html>
