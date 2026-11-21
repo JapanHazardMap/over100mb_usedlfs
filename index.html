@@ -5,7 +5,7 @@
     <title>ページ移動中...</title>
 
     <!-- 1. SEO対策：検索エンジンに正規の移動先URLを伝える -->
-    <link rel="canonical" href="https://japanhazardmap.github.io/" />
+    <link rel="canonical" href="https://japanhazardmap.github.io" />
 
     <!-- 2. JavaScriptによるリダイレクト（将来的なスマホ/PC振り分け対応） -->
     <script>
@@ -15,23 +15,23 @@
 
         if (isMobile) {
           // 【スマホ用の転送先】※現在は同じURLを指定。将来変更する場合はここを書き換えます
-          window.location.replace('https://japanhazardmap.github.io/');
+          window.location.replace('https://japanhazardmap.github.io');
         } else {
           // 【PC用の転送先】
-          window.location.replace('https://japanhazardmap.github.io/');
+          window.location.replace('https://japanhazardmap.github.io');
         }
       })();
     </script>
 
     <!-- 3. フォールバック：JavaScriptがオフの環境向けにMetaタグで0秒転送 -->
     <noscript>
-      <meta http-equiv="refresh" content="0; url=https://japanhazardmap.github.io/" />
+      <meta http-equiv="refresh" content="0; url=https://japanhazardmap.github.io" />
     </noscript>
   </head>
   <body>
     <p>
       ページを移動しています。自動的に切り替わらない場合は、<a
-        href="https://japanhazardmap.github.io/"
+        href="https://japanhazardmap.github.io"
         >こちら</a
       >をクリックしてください。
     </p>
